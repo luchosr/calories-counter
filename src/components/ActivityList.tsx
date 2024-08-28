@@ -1,6 +1,6 @@
 import { Activity } from '../types';
 import { categories } from '../data/categories';
-import { act, useMemo } from 'react';
+import { useMemo } from 'react';
 import { PencilSquareIcon, XCircleIcon } from '@heroicons/react/24/solid';
 import { ActivityActions } from '../reducers/activity-reducer';
 
