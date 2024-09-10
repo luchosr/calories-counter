@@ -3,9 +3,10 @@ import Form from './components/Form';
 import { activityReducer, initialState } from './reducers/activity-reducer';
 import ActivityList from './components/ActivityList';
 import CaloryTracker from './components/CaloryTracker';
+import { useActivity } from './hooks/useActivity';
 
 function App() {
-  const [state, dispatch] = useReducer(activityReducer, initialState);
+  const { state, dispatch } = useActivity();
   const CanRestartApp = () =>
     useMemo(() => state.activities.length, [state.activities]);
 
